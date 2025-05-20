@@ -8,6 +8,7 @@ public class EmployeeController {
 
     @GetMapping()
     public String firstAPI(){
-        return "Testing the REST API!";
+        return "Testing!";
     }
+
 }
