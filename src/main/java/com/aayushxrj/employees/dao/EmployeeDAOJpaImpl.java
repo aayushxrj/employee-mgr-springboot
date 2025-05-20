@@ -3,6 +3,7 @@ package com.aayushxrj.employees.dao;
 import com.aayushxrj.employees.entity.Employee;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.TypedQuery;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
@@ -12,6 +13,7 @@ public class EmployeeDAOJpaImpl implements EmployeeDAO{
 
     private EntityManager entityManager;
 
+    @Autowired
     public EmployeeDAOJpaImpl(EntityManager theEntityManager){
         entityManager = theEntityManager;
     }
@@ -27,7 +29,6 @@ public class EmployeeDAOJpaImpl implements EmployeeDAO{
 
         //return the results
         return employees;
-
 
     }
 }
