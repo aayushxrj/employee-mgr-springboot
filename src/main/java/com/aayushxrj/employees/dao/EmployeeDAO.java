@@ -7,4 +7,10 @@ import java.util.List;
 public interface EmployeeDAO {
 
     List<Employee> findAll();
+
+    Employee findbyId(long theId);
+
+    Employee save(Employee theEmployee);
+
+    void deleteById(long theId);
 }
